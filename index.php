@@ -39,7 +39,7 @@ a multiline comment
     // numbers int
     $age = 21;
     $users = 2;
-    $quantity = 3;
+    $quantity = 4;
 
     // numbers floats
     $gpa = 2.5;
@@ -52,19 +52,13 @@ a multiline comment
     $online = false;
     $for_sale = true;
 
+    $total = null;
 
-    echo "Hello {$name} <br>";
-    echo "You like {$food} <br>";
-    echo "your email is {$email} <br>";
-    echo "You are {$age} years old <br>";
-    echo "There are {$users} users online <br>";
-    echo "You would like to buy {$quantity} items <br> ";
+    echo "You have ordered {$quantity} x {$food}<br>";
 
-    echo "Your gpa is: {$gpa} <br>";
-    echo "Your pizza is \${$price} <br>";
-    echo "the sales tax rate is: {$tax_rate} <br>";
+    $total = $quantity * $price;
+    echo "Your total is: \${$total}";
 
-    echo "Online status: {$online}<br>"
 
 
     ?>
