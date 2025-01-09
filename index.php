@@ -30,35 +30,72 @@ a multiline comment
 
  <?php
 
-    //// VARIABLES
-    // strings
-    $name = "Jesus";
-    $food = "pizza";
-    $email = "fake@gmail.com";
+    // //// VARIABLES
+    // // strings
+    // $name = "Jesus";
+    // $food = "pizza";
+    // $email = "fake@gmail.com";
 
-    // numbers int
-    $age = 21;
-    $users = 2;
-    $quantity = 4;
+    // // numbers int
+    // $age = 21;
+    // $users = 2;
+    // $quantity = 4;
 
-    // numbers floats
-    $gpa = 2.5;
-    $price = 4.99;
-    $tax_rate = 5.1;
-
-
-    // booleans 
-    $employed = true;
-    $online = false;
-    $for_sale = true;
-
-    $total = null;
-
-    echo "You have ordered {$quantity} x {$food}<br>";
-
-    $total = $quantity * $price;
-    echo "Your total is: \${$total}";
+    // // numbers floats
+    // $gpa = 2.5;
+    // $price = 4.99;
+    // $tax_rate = 5.1;
 
 
+    // // booleans 
+    // $employed = true;
+    // $online = false;
+    // $for_sale = true;
+
+    // $total = null;
+
+    // echo "You have ordered {$quantity} x {$food}<br>";
+
+    // $total = $quantity * $price;
+    // echo "Your total is: \${$total}";
+
+
+
+    ?>
+
+ <?php
+
+    // Arithmetic operators 
+    // + - * / ** %
+
+    $x = 10;
+    $y = 2;
+    $z = null;
+
+    $z = $x + $y;
+    // echo $z;
+
+
+
+    // Incremen/ Decrement operators 
+    //++,--
+
+    $counter = 0;
+    $counter++;
+    $counter += 2;
+    // echo $counter;
+
+    $counter--;
+    // echo $counter;
+
+
+    // Operator precedence 
+    // ()
+    // **
+    // * / %
+    // + - 
+
+    $total = 1 + 2 - 3 * 4 / 5 ** 6;
+    echo $total;
 
     ?>
