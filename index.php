@@ -100,7 +100,7 @@ a multiline comment
 
     ?>
 
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
  <html lang="en">
 
  <head>
@@ -118,20 +118,76 @@ a multiline comment
          <input type="submit" value="total">
      </form>
 
- </html>
+ </html> -->
 
  <?php
 
     // $_GET and $_POST global special variables 
 
 
-    $item = "pizza";
-    $price = 5.99;
-    $quantity = $_POST["quantity"];
+    // $item = "pizza";
+    // $price = 5.99;
+    // $quantity = $_POST["quantity"];
+    // $total = null;
+
+    // $total = $quantity * $price;
+    // echo "You have ordered {$quantity} x {$item}/s <br> ";
+    // echo "Your total is: \${$total}";
+
+    ?>
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+
+ <body>
+     <form action="index.php" method="post">
+         <label>X:</label>
+         <input type="text" name="x">
+         <label>y:</label>
+         <input type="text" name="y">
+         <label>z:</label>
+         <input type="text" name="z">
+         <input type="submit" value="total">
+     </form>
+ </body>
+
+ </html>
+
+ <?php
+
+    $x = $_POST["x"];
+    $y = $_POST["y"];
+    $z = $_POST["z"];
+
+
     $total = null;
 
-    $total = $quantity * $price;
-    echo "You have ordered {$quantity} x {$item}/s <br> ";
-    echo "Your total is: \${$total}";
+    // absolute value
+    $total = abs($x);
+    // round number
+    $total = round($x);
+    // round down floor 
+    $total = floor($x);
+    // round up ciel
+    $total = ceil($x);
+    // power
+    $total = pow($x, $y);
+    // max number of all
+    $total = max($x, $y, $z);
+    // min number of all
+    $total = min($x, $y, $z);
+    // random number
+    $total = rand(1, 100);
+
+
+    echo $total;
 
     ?>
