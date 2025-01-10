@@ -138,7 +138,7 @@ a multiline comment
 
 
 
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
  <html lang="en">
 
  <head>
@@ -159,35 +159,76 @@ a multiline comment
      </form>
  </body>
 
+ </html> -->
+
+ <?php
+
+    // $x = $_POST["x"];
+    // $y = $_POST["y"];
+    // $z = $_POST["z"];
+
+
+    // $total = null;
+
+    // // absolute value
+    // $total = abs($x);
+    // // round number
+    // $total = round($x);
+    // // round down floor 
+    // $total = floor($x);
+    // // round up ciel
+    // $total = ceil($x);
+    // // power
+    // $total = pow($x, $y);
+    // // max number of all
+    // $total = max($x, $y, $z);
+    // // min number of all
+    // $total = min($x, $y, $z);
+    // // random number
+    // $total = rand(1, 100);
+
+
+    // echo $total;
+
+    ?>
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+
+ <body>
+     <form action="index.php"
+         method="post">
+         <label> radius:
+         </label>
+         <input type="text" name="radius">
+         <input type="submit" value="calculate">
+     </form> <br>
+ </body>
+
  </html>
 
  <?php
 
-    $x = $_POST["x"];
-    $y = $_POST["y"];
-    $z = $_POST["z"];
+    $radius = $_POST["radius"];
+    $circumference = null;
+    $area = null;
+    $volume = null;
 
 
-    $total = null;
+    $circumference = 2 * pi() * $radius;
+    $circumference = round($circumference, 2);
 
-    // absolute value
-    $total = abs($x);
-    // round number
-    $total = round($x);
-    // round down floor 
-    $total = floor($x);
-    // round up ciel
-    $total = ceil($x);
-    // power
-    $total = pow($x, $y);
-    // max number of all
-    $total = max($x, $y, $z);
-    // min number of all
-    $total = min($x, $y, $z);
-    // random number
-    $total = rand(1, 100);
+    $area = pi() * pow($radius, 2);
+    $area = round($area, 2);
 
-
-    echo $total;
+    echo "circumference = {$circumference}cm <br>";
+    echo "Area = {$area}cm * 2, <br>"
 
     ?>
